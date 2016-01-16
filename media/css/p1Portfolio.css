@@ -1,0 +1,43 @@
+.container-fluid{
+	border-style: solid;
+}
+
+.row{
+	border-style: solid;
+	border-color: blue;
+}
+
+.header{
+	border-bottom-color: #BCBBBB;
+}
+.centralImage{
+	padding:0;
+	margin: 2% 0;
+
+
+}
+
+.titleWork{
+	text-indent: 1%;
+}
+
+.image{
+max-height: 100%; 
+border-style: solid
+
+}
+
+
+
+.projectName{
+	overflow:hidden;
+}
+
+.linkProject{
+	overflow: hidden;
+
+}
+
+.ba{
+	position:absolute;
+}
