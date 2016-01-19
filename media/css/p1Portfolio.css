@@ -1,29 +1,54 @@
 .container-fluid{
-	border-style: solid;
+	
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
 }
 
 .row{
-	border-style: solid;
+	
 	border-color: blue;
 }
 
 .header{
-	border-bottom-color: #BCBBBB;
+	border-bottom-color: #bcbbbb;
+
 }
-.centralImage{
+.centralSection{
 	padding:0;
 	margin: 2% 0;
 
+	
+
+}
+
+.contactMe{
+	border-style: solid;
+	border-color: red;
+	position: absolute;
+	z-index:0;
+
+}
+
+.centralImage{
+	z-index: 0;
+	position:relative;
+}
+
+.aboutMe{
+	z-index: 0;
+	height: 200px;
+	position: absolute;
+	border-style: solid;
+	border-color: blue;
 
 }
 
 .titleWork{
-	text-indent: 1%;
+	
 }
 
 .image{
 max-height: 100%; 
-border-style: solid
 
 }
 
@@ -37,7 +62,25 @@ border-style: solid
 	overflow: hidden;
 
 }
-
-.ba{
-	position:absolute;
+.logo{
+	
+	//border-style:solid;
+	margin-top: 1%;
 }
+.title{
+	//border-style: solid;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+h1{
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+h2{
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+
+
+
