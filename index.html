@@ -1,78 +1,87 @@
 <!doctype html>
 <html lang="eng">
-	<head>
-		<meta name="description" content="Page to display my personal projects. Project01 for Nanodegree Udacity">
-		<meta charset="utf-8">
-		<title>Portfolio</title>
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,300|Raleway:400,100,500' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="media/css/p1Portfolio.css">
-		<script src="media/js/p1Portfolio.js"></script>
-	</head> 
-	<body>
-		<div class="container-fluid">
-			<header class="row header">
-  				<div class="col-xs-6  logo"><img class="img-responsive" src="https://sumozasnullpointer.files.wordpress.com/2015/04/udacity-logo.jpg"></div>
-  				<div class=" col-xs-6  text-right title">
-  					<h1>VANESSA AROCHI</h1>
-  					<h4>FRONT-END NINJA<h4> 
-  					<div>
-  						<ul class="list-inline">
-  							<li id="aboutMe">About me</li>
-  							<li>Featured Work</li>
-  							<li id="contactMe">Contact me</li>
-  						</ul>
-
-  					</div>
-  						<!--Add border bottom -->
-  				</div>
-			</header>
-			<main class="row">
-  				<div class="col-xs-12 centralSection"> 
-  					<div class="aboutMe">I'm a biochemist engineer changing carrers. I love coding </div>
-  					<div class="contactMe"> 
-  						<address>
-  							<strong>Mail</strong>
-  							<a href="mailto:vanearochi@gmail.com">vanearochi@gmail.com</a></div>
-  							<a href="http://twitter.com/VaneArochi">Twitter</a>
-  						</address>
-  					</div>
-  					<img  class="img-responsive centralImage" src="https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg">
-
-  				</div>
-			</section>
-			<section class="row featuredWorkSection">
- 				<h2 class= "titleWork">Featured Work</h2>
- 				<div class="col-md-4 col-xs-6">
- 					<div class="col-xs-12 image"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Screen+Shot+2016-01-15+at+3.png"></div>
- 					<div class="col-xs-12">
- 						<h3 class="projectName text-center text-uppercase">about me</h3>
- 						<p class= "linkProject text-center"><a  href="https://github.com/vanearochi/p0UdacityAboutMe">https://github.com/vanearochi/p0UdacityAboutMe</a></p>
- 					</div>
- 				</div>
- 				<div class="col-md-4 col-xs-6">
- 					<div class="col-xs-12 image"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg"></div>
- 					<div class="col-xs-12">
- 						<h3 class="projectName text-center">FIRE-WHEEL</h3>
- 						<p class="text-center"><a href="">https://github.com/vanearochi/p0UdacityAboutMe</a></p>
- 					</div>
- 				</div>
-
- 				<div class="col-md-4 col-xs-6 ">
- 					<div class="col-xs-12 image"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg"></div>
- 					<div class="col-xs-12">
- 					<h3 class="projectName text-center">JELLYFISH</h3>
- 					<p class="text-center"><a href=""></a></p>
- 				</div>
- 				<!--Images from pixabay-->
- 				 </div>
-			</main>
-
-			<footer>
-				<p class="glyphicon glyphicon-copyright-mark"> 2015 Vanessa Arochi</p>
-			</footer>	
-		</div>
-		
-	</body>
+  <head>
+    <meta name="description" content="Page to display my personal projects. Project01 for Nanodegree Udacity">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,100|Raleway:400,100,500' rel='stylesheet'>
+    <link rel="stylesheet" href="media/css/p1Portfolio.css">
+    <script src="media/js/p1portfolio.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row header">
+        <div class="col-xs-6 logo"><img class="img-responsive" src="https://sumozasnullpointer.files.wordpress.com/2015/04/udacity-logo.jpg" alt="Udacity Logo"></div>
+        <div class=" col-xs-6  text-right main-title">
+          <h1>VANESSA AROCHI</h1>
+          <h4>
+          FRONT-END NINJA
+          <h4>
+        </div>
+        <ul class="list-inline text-right navigation">
+          <li id="home">Home</li>
+          <li id="about-me">About</li>
+          <li id="contact-me">Contact me</li>
+        </ul>
+      </header>
+      <main class="row">
+        <div class="col-xs-12 central-section">
+          <div class="about-me">
+            <h2>About me</h2>
+            <p>
+              I'm a Biochemical Engineer changing carrers to become a Front End Developer based in SF.I love coding and learning.
+            </p>
+          </div>
+          <div class="contact-me">
+            <h2 class="contact-title">Contact Details</h2>
+            <a href="mailto:vanearochi@gmail.com" class="social-icon mail">
+            <b class="glyphicon glyphicon-envelope" alt=""></b>Send me an Email
+            </a>
+            <a href="http://twitter.com/VaneArochi" class="twitter">
+            <img src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/TwitterLogo_%2355acee2.png" alt="Twitter Logo" class="twitter-logo"> Follow me on Twitter
+            </a>  
+          </div>
+          <img  class="img-responsive central-image" src="https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg" alt="">
+        </div>
+        <section class="row featured-work-section">
+        <h2 class= "second-title">Featured Work</h2>
+        <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="col-xs-12 work-image">
+            <img class="img-responsive img-thumbnail" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Screen+Shot+2016-01-15+at+3.png">
+          </div>
+          <div class="col-xs-12">
+            <h3 class="project-name text-center text-uppercase">about me</h3>
+            <p class= "link-project text-center">
+              <a href="https://github.com/vanearochi/p0UdacityAboutMe">https://github.com/vanearochi/p0UdacityAboutMe</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="col-xs-12 work-image">
+            <img class="img-responsive img-thumbnail" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg">
+          </div>
+          <div class="col-xs-12">
+            <h3 class="project-name text-center">FIRE-WHEEL</h3>
+            <p class="text-center">
+              <a href="">https://github.com/vanearochi/p0UdacityAboutMe</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="col-xs-12 work-image">
+            <img class="img-responsive img-thumbnail" src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg">
+          </div>
+          <div class="col-xs-12">
+            <h3 class="project-name text-center">JELLYFISH</h3>
+            <p class="text-center">
+              <a href="https://github.com/vanearochi/p0UdacityAboutMe">https://github.com/vanearochi/p0UdacityAboutMe</a>
+            </p>
+          </div>
+          <!--Images from pixabay-->
+        </div>
+      </main>
+    </div>
+  </body>

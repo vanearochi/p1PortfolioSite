@@ -8,24 +8,26 @@ $(document).ready(function(){
 		$(this).addClass("active");
 		liClass= $(this).attr('id');
 		console.log(liClass)
-		if(liClass==="aboutMe"){
-			$(".centralImage").fadeOut();
-	  		$(".aboutMe").show();
-	  		$(".featuredWorkSection").hide();
-	  		$(".contactMe").hide();
+		if(liClass==="about-me"){
+			$(".central-image").fadeOut();
+	  		$(".about-me").show();
+	  		$(".featured-work-section").fadeOut();
+	  		$(".contact-me").hide();
 	  	}
-	  	else if(liClass==="featuredWork"){
-	  		console.log(3)
+	  	else if(liClass==="home"){
+	  		$(".central-image").show();
+	  		$(".contact-me").hide();
+	  		$(".featured-work-section").show();
+	  		$(".about-me").hide();
 	  	}
-	  	else if(liClass==="contactMe"){
+	  	else if(liClass==="contact-me"){
 	  		console.log(2)
-	  		$(".centralImage").fadeOut();
-	  		$(".contactMe").show();
-	  		$(".featuredWorkSection").hide();
-	  		$(".aboutMe").hide();
+	  		$(".central-image").fadeOut();
+	  		$(".contact-me").show();
+	  		$(".featured-work-section").fadeOut();
+	  		$(".about-me").hide();
 	  	}
-	  		//selectedTab="all";
-	  		//$(".search-input").val('');
+	  	
 		})
 
 });

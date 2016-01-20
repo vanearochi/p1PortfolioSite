@@ -1,85 +1,96 @@
-.container-fluid{
-	
-font-family: 'Ubuntu', sans-serif;
-font-weight: 400;
+
+.container-fluid {	
+	font-family: 'work-sans', sans-serif;
+	font-weight: 400;
 }
 
-.row{
-	
-	border-color: blue;
+a {
+	color: #808080;
+	display: block;
+	font-weight: 100;	
 }
 
-.header{
+h1 {
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
+
+h2 {
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+
+/* Header */
+
+.header {
 	border-bottom-color: #bcbbbb;
-
-}
-.centralSection{
-	padding:0;
-	margin: 2% 0;
-
-	
-
-}
-
-.contactMe{
-	border-style: solid;
-	border-color: red;
-	position: absolute;
-	z-index:0;
-
-}
-
-.centralImage{
-	z-index: 0;
-	position:relative;
-}
-
-.aboutMe{
-	z-index: 0;
-	height: 200px;
-	position: absolute;
-	border-style: solid;
-	border-color: blue;
-
-}
-
-.titleWork{
-	
-}
-
-.image{
-max-height: 100%; 
-
+	border-bottom-style: solid;
+	padding-bottom: 2%; 
 }
 
 
-
-.projectName{
-	overflow:hidden;
-}
-
-.linkProject{
-	overflow: hidden;
-
-}
-.logo{
-	
-	//border-style:solid;
+.logo {	
 	margin-top: 1%;
 }
-.title{
-	//border-style: solid;
+
+
+.main-title, 
+.navigation {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	letter-spacing: 5px;
 }
-h1{
-	font-weight: 100;
-	letter-spacing: 5px;
+
+
+/*Content*/
+
+.central-section {
+	margin: 3% 0;
+	padding: 0;
+	position: relative;
 }
-h2{
-	font-weight: 800;
-	letter-spacing: 3px;
+
+
+.about-me {
+	font-size: large;
+	margin-left: 2%;
+	max-width: 60%;
+	position: absolute;
+}
+
+
+.contact-me {
+	position: absolute;
+	margin-left: 2%;
+
+}
+
+
+.glyphicon {
+	font-size: 25px;
+	padding: 5%;
+}
+
+
+.twitter-logo {
+	padding: 2%;
+}
+
+
+.central-image { 
+	position: relative;
+}
+
+
+.second-title {
+	text-indent: 4%;	
+}
+
+
+.workImage {
+	max-height: 100%; 
+
 }
 
 
