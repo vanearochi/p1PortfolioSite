@@ -1,5 +1,6 @@
+/* General*/
 
-.container-fluid {	
+.container-fluid {
 	font-family: 'work-sans', sans-serif;
 	font-weight: 400;
 }
@@ -7,7 +8,7 @@
 a {
 	color: #808080;
 	display: block;
-	font-weight: 100;	
+	font-weight: 100;
 }
 
 h1 {
@@ -24,18 +25,17 @@ h2 {
 /* Header */
 
 .header {
-	border-bottom-color: #bcbbbb;
-	border-bottom-style: solid;
-	padding-bottom: 2%; 
+	border-bottom: solid #bcbbbb;
+	padding-bottom: 2%;
 }
 
 
-.logo {	
+.logo {
 	margin-top: 1%;
 }
 
 
-.main-title, 
+.main-title,
 .navigation {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
@@ -47,51 +47,22 @@ h2 {
 
 .central-section {
 	margin: 3% 0;
-	padding: 0;
-	position: relative;
-}
-
-
-.about-me {
-	font-size: large;
-	margin-left: 2%;
-	max-width: 60%;
-	position: absolute;
-}
-
-
-.contact-me {
-	position: absolute;
-	margin-left: 2%;
-
 }
 
 
 .glyphicon {
 	font-size: 25px;
-	padding: 5%;
+	padding: 0 1% 0 1.5%;
 }
 
 
 .twitter-logo {
-	padding: 2%;
-}
-
-
-.central-image { 
-	position: relative;
+	padding: 0 0.5% 0 1%;
 }
 
 
 .second-title {
-	text-indent: 4%;	
+	text-indent: 4%;
 }
-
-
-.workImage {
-	max-height: 100%; 
-
-}
-
 
 
