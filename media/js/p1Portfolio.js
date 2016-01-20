@@ -1,8 +1,10 @@
 $(document).ready(function(){
-	console.log("Welcome to Portfolio Vane")
+	console.log("Welcome to Portfolio Vane");
+
+	console.log("Testing... 1,2,3...");
 
 	$("li").on("click", function(){
-		console.log("1")
+		console.log("1");
 
 		$("li").removeClass("active")
 		$(this).addClass("active");
