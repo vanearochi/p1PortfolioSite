@@ -2,8 +2,11 @@ $(document).ready(function(){
 
 	console.log("Welcome to Portfolio Vane");
 
-	/**Function that pass trough all the elements array indexes so it can hide or show an element depending
-	on the comparition between the attribute value and the curent value*/
+	/** Function that uses jQuery methods to show or hide content in the page
+	@param {jQuery object} section tags - jQuery Object that contains the <section> elements of the HTML document
+	@param {string} attribute name - Name of the attr what we are looking for in the section element
+	@param {string} attribute value - The value of the attribute that we searched for in the section element
+	*/
 	var hideAllButOne = function(elements, attributeName, attributeValue ){
 		$(elements).each(function(index){
 			var currentElement = $(elements[index]);
@@ -20,15 +23,21 @@ $(document).ready(function(){
 	console.log("Testing... 1,2,3...");
 
 	var sections = $(".central-section > section");
-	/** hideAllButOne function is called so it can show the home section when is opened or refreshed*/
+	console.log(sections)
+
+	/** hideAllButOne function is called so it can show the home section when the page is opened or refreshed*/
+
 	hideAllButOne(sections, 'data-tab', 'home');
 
 
-	/** Function for navigation functionality, takes the id of the clicked li and takes an array of
-	the sections of the html so it can pass them as a parameter when at the end calls the changeAllbutOne function */
+	/** Navigation functionality of the page is attached to this click event.
+	When any of the <li> elements is clicked a function is executed, this function
+	calls the hideAllButOne function and creates 2 variables that serve as parameters for the
+	function that is called
+	*/
 	$(".navigation li").on("click", function(){
 
-		var selectedTabName = $(this).attr('id')
+		var selectedTabName = $(this).attr('id');
 		var sections = $(".central-section > section");
 		hideAllButOne(sections, 'data-tab', selectedTabName);
 
