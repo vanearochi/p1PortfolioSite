@@ -37,7 +37,7 @@ $(document).ready(function(){
 	*/
 	$(".navigation li").on("click", function(){
 
-		var selectedTabName = $(this).attr('id');
+		var selectedTabName = $(this).attr('class');
 		var sections = $(".central-section > section");
 		hideAllButOne(sections, 'data-tab', selectedTabName);
 
