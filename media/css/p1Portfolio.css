@@ -1,3 +1,41 @@
+/*Media queries*/
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1{
+    	font-size: 2.2rem;
+    }
+
+    h2{
+    	font-size: 2rem;
+    }
+
+    h3{
+    	font-size: 1.8rem;
+    }
+
+    h4{
+    	letter-spacing: 0;
+    	font-size: 1.2rem;
+    }
+
+    a{
+    	font-size: 1rem;
+    }
+
+    .navigation li{
+    	font-size: 1.6rem;
+    	letter-spacing: normal;
+    }
+
+    .project-container{
+    	padding: 0;
+    }
+}
+
 /* General*/
 
 .container-fluid {
@@ -19,12 +57,17 @@ h1 {
 
 h2 {
 	font-weight: 800;
-	letter-spacing: 3px;
 }
 
 li:hover{
-	opacity: 0.3;
-	cursor: -webkit-grab;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+li{
+
+	font-size: 2rem;
+
 }
 
 /* Header */
@@ -36,7 +79,7 @@ li:hover{
 
 
 .logo {
-	margin-top: 1%;
+	margin-top: 20px;
 }
 
 
