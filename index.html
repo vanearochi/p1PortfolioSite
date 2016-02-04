@@ -8,117 +8,134 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,100|Raleway:400,100,500' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,100%7CRaleway:400,100,500' rel='stylesheet'>
         <link rel="stylesheet" href="media/css/p1Portfolio.css">
+        <!-- I added picturefill for browser compatibility of srcset attribute-->
         <script src="media/js/picturefill.min.js" async></script>
         <script src="media/js/p1portfolio.js"></script>
     </head>
     <body>
         <!--I choose to work with bootstrap grid system since I thought it work better for the layout of the whole page-->
         <div class="container-fluid">
-             <!--I used container fluid so the page readjust continually with any change in the width-->
-        <!--Header-->
+            <!--I used container fluid so the page readjust continually with any change in the width-->
+            <!--Header-->
             <header class="row header">
+                <!--Udacity Logo-->
                 <figure class="col-xs-3 logo">
                     <img
-                    class="img-responsive"
-                    src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/UdacityLogo.png"
-                    alt="Udacity Logo">
+                        class="img-responsive"
+                        src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/UdacityLogo.png"
+                        alt="Udacity Logo">
                 </figure>
+                <!--Main title-->
                 <div class="col-xs-9 text-uppercase text-right main-title">
                     <h1>vanessa arochi</h1>
                     <h4>front-end ninja</h4>
                 </div>
+
+                <!--Navigation-->
                 <ul class="list-inline text-capitalize text-right navigation">
                     <li class="home">home</li>
                     <li class="about-me">about</li>
                     <li class="contact-me">contact me</li>
                 </ul>
+
             </header>
-        <!-- Central section -->
+            <!-- Central section -->
             <main class="row">
                 <div class="col-xs-12 central-section">
-            <!--About me section-->
-                    <section data-tab="about-me">
+                    <!--About me section-->
+                    <section data-tab="about-me" class="jumbotron">
                         <h2 class="text-capitalize">about me</h2>
                         <p>
                             I'm a Biochemical Engineer changing carrers to become a Front End Developer based in SF. I love coding and learning.
                         </p>
                     </section>
-            <!--Contact me section-->
-                    <section data-tab="contact-me">
+                    <!--Contact me section-->
+                    <section data-tab="contact-me" class="jumbotron">
                         <h2 class="contact-title text-capitalize">contact details</h2>
-                        <a href="mailto:vanearochi@gmail.com" class="social-icon mail">
-                        <b class="glyphicon glyphicon-envelope"></b>Send me an Email
+                        <a href="mailto:vanearochi@gmail.com" class="">
+                        <span class="fa fa-envelope-o fa-2x">&nbsp; Send me an email</span>
                         </a>
-                        <a href="http://twitter.com/VaneArochi" class="twitter">
-                        <img src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/TwitterLogo_%2355acee2.png" alt="Twitter Logo" class="twitter-logo"> Follow me on Twitter
+                        <a href="http://twitter.com/VaneArochi" class="">
+                        <span class="fa fa-twitter-square fa-2x">&nbsp; Follow me on Twitter</span>
                         </a>
                     </section>
-            <!--Home section-->
+                <!--Home section-->
+                    <!--Central Image-->
                     <section data-tab="home">
                         <figure class="row">
                             <img
-                            class="img-responsive central-image"
-                            src="https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg"
-                            srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/keyboard-918219_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/keyboard-918219_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg 1920w"
-                            alt=""
-                           >
+                                class="img-responsive central-image"
+                                src="https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg"
+                                sizes="100vw"
+                                srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/keyboard-918219_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/keyboard-918219_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/keyboard-918219_1920.jpg 1920w"
+                                alt=""
+                                >
                         </figure>
-                <!--Featured work-->
+                        <!--Featured work section-->
                         <div class="row">
                             <h2 class= "second-title text-capitalize">featured work</h2>
-                        <!--First box About me-->
+                            <!--First box About me-->
                             <div class="col-md-4 col-md-offset-0 col-xs-9 col-xs-offset-1 project-container">
-                                <figure class="col-xs-12">
-                                    <!--I used bootstrap image-responsive command so the image adjust to the size of the screen-->
-                                    <img
-                                    class="img-responsive img-thumbnail"
-                                    src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Screen+Shot+2016-01-15+at+3.png"
-                                    srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_1920.jpg 1920w"
-                                    alt="About me project screenshot"
-                                    >
-                                </figure>
-                                <figcaption class="col-xs-12">
-                                    <h3 class="text-center text-uppercase">about me</h3>
-                                    <p class= "text-center">
-                                        <a href="https://github.com/vanearochi/p0UdacityAboutMe">https://github.com/vanearochi/p0UdacityAboutMe</a>
-                                    </p>
-                                </figcaption>
+                                <a href="https://github.com/vanearochi/p0UdacityAboutMe">
+                                    <figure class="col-xs-12">
+                                        <!--I used bootstrap image-responsive command so the image adjust to the size of the screen-->
+                                        <img
+                                            class="img-responsive img-thumbnail"
+                                            src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Screen+Shot+2016-01-15+at+3.png"
+                                            sizes="(max-width: 992px) 75vw, (min-width:993px) 30vw"
+                                            srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/code-820275_1920.jpg 1920w"
+                                            alt="Computer screen showing code image"
+                                            >
+                                    </figure>
+                                    <div class="col-xs-12 project-name">
+                                        <h2 class="text-center text-uppercase">about me</h2>
+                                        <p class= "text-center">https://github.com/Udacity/AboutMe
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        <!--Second box Fire-wheel-->
+                            <!--Second box Fire-wheel-->
                             <div class="col-md-4 col-md-offset-0 col-xs-9 col-xs-offset-1 project-container">
-                                <figure class="col-xs-12">
-                                    <img
-                                    class="img-responsive img-thumbnail"
-                                    src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg"
-                                    srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/fire-wheel-828661_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/fire-wheel-828661_1920.jpg 1920w"
-                                    alt="fire-wheel image"
-                                    >
-                                </figure>
-                                <figcaption class="col-xs-12">
-                                    <h3 class="text-uppercase text-center">fire wheel</h3>
-                                    <p class="text-center">
-                                        <a href="https://github.com/vanearochi">https://github.com/vanearochi</a>
-                                    </p>
-                                </figcaption>
+                                <a href="https://github.com/vanearochi">
+                                    <figure class="col-xs-12">
+                                        <img
+                                            class="img-responsive img-thumbnail"
+                                            src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg"
+                                            sizes="(max-width: 992px) 75vw, (min-width:993px) 30vw"
+                                            srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/fire-wheel-828661_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/fire-wheel-828661_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/fire-wheel-828661_1920.jpg 1920w"
+                                            alt="fire-wheel image"
+                                            >
+                                    </figure>
+                                    <div class="col-xs-12 project-name">
+                                        <h2 class="text-uppercase text-center">fire wheel</h2>
+                                        <p class="text-center">
+                                            https://github.com/vanearochi
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        <!--third box Jellyfish-->
+                            <!--third box Jellyfish-->
                             <div class="col-md-4 col-md-offset-0 col-xs-9 col-xs-offset-1 project-container">
-                                <figure class="col-xs-12">
-                                    <img
-                                    class="img-responsive img-thumbnail"
-                                    src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg"
-                                    srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/jellyfish-690472_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/jellyfish-1920.jpg 1920w"
-                                    alt="jellyfish"
-                                    >
-                                </figure>
-                                <figcaption class="col-xs-12">
-                                    <h3 class="text-uppercase text-center">jellyfish</h3>
-                                    <p class="text-center">
-                                        <a href="https://github.com/vanearochi">https://github.com/vanearochi</a>
-                                    </p>
-                                </figcaption>
+                                <a href="https://github.com/vanearochi">
+                                    <figure class="col-xs-12">
+                                        <img
+                                            class="img-responsive img-thumbnail"
+                                            src="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg"
+                                            sizes="(max-width: 992px) 75vw, (min-width:993px) 30vw"
+                                            srcset="https://s3-us-west-2.amazonaws.com/vaneprojects/images/jellyfish-690472_640.jpg 640w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/jellyfish-690472_1280.jpg 1280w, https://s3-us-west-2.amazonaws.com/vaneprojects/images/Udacity-p1/jellyfish-1920.jpg 1920w"
+                                            alt="jellyfish image"
+                                            >
+                                    </figure>
+                                    <div class="col-xs-12">
+                                        <h2 class="text-uppercase text-center">jellyfish</h2>
+                                        <p class="text-center">
+                                            https://github.com/vanearochi
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </section>

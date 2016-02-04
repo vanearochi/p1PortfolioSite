@@ -1,125 +1,115 @@
-/*Media queries*/
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 1.5rem;
-    }
-
-    .main-title h1{
-    	font-size: 2rem;
-    	letter-spacing: normal;
-    }
-
-    h2{
-    	font-size: 2.2rem;
-    }
-
-    h3{
-    	font-size: 1.8rem;
-    }
-
-    h4{
-    	letter-spacing: 0;
-    	font-size: 1.2rem;
-    }
-
-    a{
-    	font-size: 1rem;
-    }
-
-    .navigation li{
-    	font-size: 1.6rem;
-    	letter-spacing: normal;
-    }
-
-    .project-container{
-    	padding: 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
-	.main-title h1{
-    	letter-spacing: normal;
-    }
-
-
-}
 
 /* General*/
 
-.container-fluid {
-	font-family: 'work-sans', sans-serif;
-	font-weight: 400;
-}
+body {
 
-a {
-	color: #808080;
-	display: block;
-	font-weight: 100;
-}
-
-h1 {
-	font-weight: 100;
-	letter-spacing: 5px;
-}
-
-
-h2 {
-	font-weight: 800;
-}
-
-li:hover{
-	opacity: 0.4;
-	cursor: pointer;
-}
-
-li{
-
-	font-size: 2rem;
+    font-family: 'work-sans', sans-serif;
+    font-weight: 400;
 
 }
+
+
+h1,
+.main-title,
+.navigation {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+
+}
+
+
+li {
+
+    margin: 10px 5px;
+    font-size: 2rem;
+
+}
+
 
 /* Header */
 
-.header {
-	border-bottom: solid #bcbbbb;
-	padding-bottom: 2%;
-}
-
-
 .logo {
-	margin-top: 20px;
+
+    margin-top: 20px;
+
+}
+
+li:hover{
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 
-.main-title,
-.navigation {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
-	letter-spacing: 5px;
+/*Content/
+
+/*Contact me section*/
+
+.fa {
+
+    padding: 1% 1% 0 1.5%;
+    display: block;
+
 }
 
 
-/*Content*/
+/*Featured work section*/
 
-.central-section {
-	margin: 3% 0;
+h2.second-title {
+
+        text-indent: 3rem;
+
 }
 
 
-.glyphicon {
-	font-size: 25px;
-	padding: 0 1% 0 1.5%;
+/*Media queries*/
+
+@media screen and (min-width: 850px) {
+
+    h1 {
+
+        letter-spacing: 1rem;
+    }
+
+
+    h4,
+    li {
+
+         letter-spacing: 0.6rem;
+         font-size: 2.5rem;
+
+    }
+
+
+    h2 {
+
+        font-size: 3.5rem;
+        letter-spacing: 0.3rem;
+
+    }
+
 }
 
 
-.twitter-logo {
-	padding: 0 0.5% 0 1%;
+@media screen and (min-width:0) and (max-width: 500px){
+
+    h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+    h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    h2.second-title {
+
+        text-indent: 2.5rem;
+
+    }
+
 }
-
-
-.second-title {
-	text-indent: 4%;
-}
-
-
